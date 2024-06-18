@@ -1,0 +1,22 @@
+{
+  "name": "backend-challenge-main",
+  "version": "1.0.0",
+  "description": "## Objetivo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/http/server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^5.15.1",
+    "tsc": "^2.0.4",
+    "tsx": "^4.15.6",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.15.0",
+    "fastify": "^4.28.0",
+    "zod": "^3.23.8"
+  }
+}

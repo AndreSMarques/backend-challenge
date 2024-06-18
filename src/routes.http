@@ -1,0 +1,42 @@
+POST http://localhost:3333/register
+Content-Type: application/json
+
+{
+  "username": "nome_de_usuario1",
+  "password": "senha_segura2"
+}
+
+###
+
+POST http://localhost:3333/task
+Content-Type: application/json
+
+{
+  "title": "Título da tarefa2",
+  "description": "Descrição da tarefa2qseqw",
+  "status": "pendente"
+}
+
+###
+
+GET http://localhost:3333/task
+
+###
+
+GEt http://localhost:3333/task/ae2c2ebf-fce2-41c5-8ee9-c2f89493d4d7
+
+###
+PUT http://localhost:3333/task/ae2c2ebf-fce2-41c5-8ee9-c2f89493d4d7
+Content-Type: application/json
+
+{
+  "title": "Novo título da tarefa",
+  "description": "Nova descrição da tarefa",
+  "status": "em progresso"
+}
+
+###
+DELETE  http://localhost:3333/task/58a1f364-80b5-420e-b4b0-a67acc6bab33
+
+###
+GET http://localhost:3333/task
